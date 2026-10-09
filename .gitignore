@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 token.json
 credentials.json
+bot_data.pkl
