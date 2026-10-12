@@ -11,6 +11,7 @@ TASKS_DATABASE_ID = os.getenv("TASKS_DATABASE_ID") or os.getenv("TASKS_PAGE_ID")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 ALLOWED_USER_ID = int(os.getenv("ALLOWED_USER_ID", "0"))
+CALENDAR_DATABASE_ID = os.getenv("CALENDAR_DATABASE_ID")
 
 if not all([TELEGRAM_TOKEN, GROQ_API_KEY, NOTION_TOKEN]):
     raise ValueError("Missing critical API keys in environment variables!")
@@ -30,6 +31,8 @@ required_vars = [
     ("TASKS_DATABASE_ID", TASKS_DATABASE_ID),
     ("GROQ_API_KEY", GROQ_API_KEY),
     ("TELEGRAM_TOKEN", TELEGRAM_TOKEN),
+    ("ALLOWED_USER_ID", ALLOWED_USER_ID),
+    ("CALENDAR_DATABASE_ID", CALENDAR_DATABASE_ID),
 ]
 
 missing = [name for name, val in required_vars if not val]

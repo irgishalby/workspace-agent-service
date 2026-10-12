@@ -1,0 +1,38 @@
+Folder PATH listing for volume New Volume
+Volume serial number is AE69-D54D
+D:.
+|   .env
+|   .gitignore
+|   bot_data.pkl
+|   credentials.json
+|   main.py
+|   requirements.txt
+|   treeview.txt
+|   
++---.claude
+|       settings.local.json
+|       
++---config
+|   |   settings.py
+|   |   
+|   \---__pycache__
+|           settings.cpython-314.pyc
+|           
++---core
+|   |   agent.py
+|   |   books.py
+|   |   edit.py
+|   |   prompts.py
+|   |   reminders.py
+|   |   summary.py
+|   |   
+|   \---__pycache__
+|           agent.cpython-314.pyc
+|           prompts.cpython-314.pyc
+|           
+\---tools
+    |   notion_tool.py
+    |   
+    \---__pycache__
+            notion_tool.cpython-314.pyc
+            
